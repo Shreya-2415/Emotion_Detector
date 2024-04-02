@@ -6,4 +6,3 @@ To use this model:
 3. run the gui.py file
 4. upload the image in the gui
 5. Click on the detect button to detect the emotion.
-6. 
