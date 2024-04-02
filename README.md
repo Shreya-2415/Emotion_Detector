@@ -7,3 +7,5 @@ To use this model:
 4. run the gui.py file
 5. upload the image in the gui
 6. Click on the detect button to detect the emotion.
+
+- Change the numper of epochs to 30 and run on google colab for better accuracy
