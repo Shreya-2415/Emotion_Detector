@@ -9,3 +9,5 @@ To use this model:
 6. Click on the detect button to detect the emotion.
 
 - Change the numper of epochs to 30 and run on google colab for better accuracy
+
+-- guui.py is for images (Training Task) and gui_LiveVideo.py is for video streaming (Task 1)
