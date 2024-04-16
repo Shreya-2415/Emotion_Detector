@@ -10,4 +10,4 @@ To use this model:
 
 - Change the numper of epochs to 30 and run on google colab for better accuracy
 
--- guui.py is for images (Training Task) and gui_LiveVideo.py is for video streaming (Task 1)
+- gui.py is for images (Training Task) and gui_liveVideo.py is for video streaming (Task 1)
