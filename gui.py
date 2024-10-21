@@ -15,50 +15,7 @@ def FacialExpressionModel(json_file, weights_file):
         model = model_from_json(loaded_model_json)
 
     return model
-    # try:
-    #     model.load_weights(weights_file)
-    #     print("Weights loaded successfully.")
-    # except ValueError as e:
-    #     print("Error loading weights:", str(e))
-
-
-# def new_model(model):
-#     return model
-
-    # weights_new(weights_file, model)
-    # model.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy'])
-
-    # return model
-
-# def weights_new(weights_file, model):
-    # model.load_weights(weights_file)
-    # try:
-    #     model.load_weights(weights_file)
-    #     print("Weights loaded successfully.")
-    # except ValueError as e:
-    #     print("Error loading weights:", str(e))
-
-# def load_partial_weights(weights_file, model):
-#     try:
-#         model.load_weights(weights_file, by_name=True)  # Load weights of only the layers with matching names
-#         print("Weights loaded successfully.")
-#     except ValueError as e:
-#         print("Error loading weights:", str(e))
-
-# def load_partial_weights(weights_file, model):
-#     try:
-#         with open(weights_file, 'rb') as f:
-#             model_weights = pickle.load(f)
-
-#         # Loop through layers and assign weights if layer names match
-#         for layer in model.layers:
-#             if layer.name in model_weights:
-#                 layer.set_weights(model_weights[layer.name])
-
-#         print("Weights loaded successfully.")
-#     except Exception as e:
-#         print("Error loading weights:", str(e))
-
+    
 model = FacialExpressionModel("model_a.json", "model.weights.h5")
 # load_partial_weights("model.weights.h5", model)
 try:
@@ -102,19 +59,6 @@ def show_Detect_button(file_path):
     detect_b.configure(background="#364156", foreground= "white", font=('arial', 10, 'bold'))
     detect_b.place(relx= 0.79, rely= 0.46)
 
-# def upload_image():
-#     try:
-#         file_path = filedialog.askopenfile()
-#         uploaded = Image.open(file_path)
-#         uploaded.thumbnail(((top.winfo_width()/2.3), (top.winfo_height()/2.3)))
-#         im = ImageTk.PhotoImage(uploaded)
-
-#         sign_image.configure(image= im)
-#         sign_image.image = im
-#         label1.configure(text = '')
-#         show_Detect_button(file_path)
-#     except:
-#         pass
     
 def upload_image():
     try:
